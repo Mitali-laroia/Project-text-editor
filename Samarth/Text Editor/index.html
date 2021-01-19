@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- My Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <!-- Tool Bar for the text Editor AND TITLE area -->
+    <div id="Tool-Bar">
+        <!-- Heading of the Document -->
+        <div class="position-relative">
+            <input type="text" class="myHeading position-absolute top-0 start-50 translate-middle-x text-center"
+                value="My Own Text Editor" placeholder="Untitled">
+        </div>
+
+        <div id="tools" class="position-absolute top-50 start-50 translate-middle-x">
+            <ul class="tool-list">
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command='justifyLeft'
+                        class="tool--btn">
+                        <i class=' fas fa-align-left'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command='justifyCenter' 
+                        class="tool--btn">
+                        <i class=' fas fa-align-center'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command="bold" 
+                        class="tool--btn">
+                        <i class=' fas fa-bold'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command="italic"
+                        class="tool--btn">
+                        <i class=' fas fa-italic'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command="underline"
+                        class="tool--btn">
+                        <i class=' fas fa-underline'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command="insertOrderedList"
+                        class="tool--btn">
+                        <i class=' fas fa-list-ol'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command="insertUnorderedList"
+                        class="tool--btn">
+                        <i class=' fas fa-list-ul'></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button 
+                        type="button" 
+                        data-command="createlink" 
+                        class="tool--btn">
+                        <i class=' fas fa-link'></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Place where you will eneter the text -->
+    <div id="Text-Entry" class="container-fluid" contenteditable="true">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum distinctio quo aspernatur delectus iure
+        vitae animi voluptatem fugit dolorem iusto sint, doloremque voluptate repellat nihil placeat aperiam laudantium
+        ipsam eum sit reiciendis labore repudiandae consequuntur. Nesciunt atque quia error. Iure odio, repudiandae a
+        error cum amet assumenda ad. Ipsam, sunt sequi, doloribus earum ex dicta deserunt ea dolorum dolore eius dolores
+        laborum similique quam! Exercitationem deserunt cum, culpa nesciunt illo, sed numquam nam mollitia sit ducimus
+        deleniti sint doloribus tenetur et, maiores facilis? Facilis voluptas numquam enim perferendis sint? Corrupti
+        praesentium asperiores corporis aliquid tempore libero quae ipsum temporibus?
+
+
+    </div>
+
+    <!-- Editor Js -->
+    <script src="js/editor.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
